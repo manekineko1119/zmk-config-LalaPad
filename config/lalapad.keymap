@@ -23,7 +23,6 @@
 
 &glidepoint_listener_R {
     input-processors =
-        // <&zip_report_rate_limit 15>,
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 4 1>,
         <&zip_temp_layer MOUSE_R_LAYER 500>;
